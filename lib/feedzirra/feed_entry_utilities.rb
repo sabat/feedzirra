@@ -3,6 +3,12 @@ module Feedzirra
 
     include Enumerable
 
+    def to_hash
+      Hash[ self.to_a ]
+    end
+
+    alias :to_h :to_hash
+
     def published
       @published ||= @updated
     end

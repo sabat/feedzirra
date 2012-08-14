@@ -16,6 +16,9 @@ module Feedzirra
         element :"content:encoded", :as => :content
         element :description, :as => :summary
 
+        element :imageurl, :as => :image_url
+        element :imageURL, :as => :image_url
+
         element :pubDate, :as => :published
         element :pubdate, :as => :published
         element :"dc:date", :as => :published
